@@ -702,7 +702,7 @@ section {
 }
 
 .first-screen {
-  margin: 0 auto 97px;
+  margin: 0 auto 73px;
   width: 100%;
   position: relative;
 }
@@ -761,6 +761,10 @@ section {
   content: "";
 }
 
+.slick-dotted.slick-slider {
+  margin-bottom: 73px;
+}
+
 .template-title::after {
   display: none;
 }
@@ -806,9 +810,26 @@ form.calculation-form {
   display: none;
 }
 .calculation .check {
-  padding-left: 33px;
+  padding-left: 16px;
 }
 .calculation #fileInput {
-  background-color: transparent;
+  display: none;
+}
+.calculation label[for=fileInput] {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px dashed rgba(255, 255, 255, 0.2588235294);
+  text-align: center;
+  padding: 11px 10px;
+  margin: 0;
+}
+.calculation .padding-top {
+  padding-top: 19px;
+}
+.calculation .check {
+  padding-bottom: 7px;
+}
+.calculation #file-name {
+  margin-top: 47px;
 }
 /*# sourceMappingURL=style.css.map */
