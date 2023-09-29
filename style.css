@@ -360,7 +360,6 @@ body *::selection {
 
 .btn-2-2 {
   padding: 14px 27px;
-  min-width: 171px;
   min-height: 50px;
 }
 
@@ -745,6 +744,16 @@ form.calculation-form {
   min-width: calc(100% + 30px);
 }
 
+.delivery {
+  margin: 97px 0 95px 0;
+}
+.delivery .container {
+  padding: 0;
+}
+.delivery .carousel-template .card-img-box {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
 .delivery h2::after {
   background-color: #89C249;
   position: absolute;
@@ -761,6 +770,121 @@ form.calculation-form {
   bottom: 15px;
   transform: translate(-50%, 0px);
   margin: 0;
+}
+
+button.slick-prev,
+button.slick-next {
+  display: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  background-image: url(assets/img/ar.gray1.svg);
+  height: 45px;
+  width: 45px;
+  display: block;
+}
+
+.slick-next:before {
+  background-image: url(assets/img/ar.gray2.svg);
+  transform: translate(14px, 0);
+}
+
+.slick-prev:before {
+  transform: translate(-38px, 0);
+}
+
+.card {
+  background-color: #363A4D;
+  border-radius: 20px;
+  height: 482px;
+  padding: 0 20px 27px;
+  text-align: center;
+  border: none;
+  max-width: 360px;
+}
+.card-title {
+  font-family: ProximaNova;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.5%;
+  margin-bottom: 12px;
+}
+.card-options {
+  display: flex;
+  justify-content: space-between;
+  max-width: 210px;
+  width: 100%;
+  margin: 0 auto 8px;
+}
+.card-options-item {
+  display: flex;
+  align-items: center;
+}
+.card-options-item img {
+  margin-right: 8px;
+  max-width: 24px;
+  max-height: 24px;
+}
+.card-price {
+  margin-bottom: 22px;
+}
+.card-price span:first-child {
+  color: #A3A3A3;
+  text-align: center;
+  font-family: ProximaNova;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+  /* 27.39px */
+}
+.card-price span:last-child {
+  color: #FFF;
+  font-family: ProximaNova;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+}
+.card-price strong {
+  color: #FFF;
+  font-family: ProximaNova;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.5%;
+}
+.card .btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card .btn-row button {
+  width: 153px;
+  padding: 13px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-template {
+  margin: 0 -15px;
+}
+.carousel-template .slide-item {
+  padding: 0 15px;
+}
+.carousel-template .card-img-box {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 229px;
+  margin: 0 -20px 27px;
+}
+.carousel-template .card-img-box img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
 }
 
 @media (min-width: 992px) {
@@ -924,6 +1048,7 @@ form.calculation-form {
   .calculation .calculation-form .request-button {
     padding: 23px 38px 20px 35px;
     margin-bottom: 11px;
+    min-width: 276px;
   }
   .calculation .calculation-form .request-button .button-description > img,
   .calculation .calculation-form .request-button .btn-1 {
